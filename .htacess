@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !rozumnymuz.com$ [NC]
+RewriteRule ^(.*)$ https://rozumnymuz.php5.sk/$1 [L,R=301]
